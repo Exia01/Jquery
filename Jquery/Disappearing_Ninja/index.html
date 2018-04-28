@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').css('display', 'block');
+            $('img').width(150); // Units are assumed to be pixels
+            $('img').height(150);
+
+        $(function() {
+        });
+            $('body').css('background-color', 'grey')
+            $("img").click(function(){
+                 $(this).hide();
+            })
+            $("button").click(function(){
+                 $("img").show();
+            })
+            
+        })
+</script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+    <img src="ninja_1.ico" alt="ninja_icon">
+    <img src="ninja_1.ico" alt="ninja_icon">
+    <img src="ninja_1.ico" alt="ninja_icon">
+    <img src="ninja_1.ico" alt="ninja_icon">
+    <img src="ninja_1.ico" alt="ninja_icon">
+    <img src="ninja_1.ico" alt="ninja_icon">
+    <img src="ninja_1.ico" alt="ninja_icon">
+    </div>
+    <button>Click to restore the ninjas</button>
+</body>
+</html>

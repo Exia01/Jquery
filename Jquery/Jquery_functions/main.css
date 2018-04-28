@@ -1,0 +1,43 @@
+
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#wrapper{
+    background-color: grey;
+    font-family:Arial, Helvetica;
+    width: 600px;
+    height: auto;
+    background: #ffffff;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+
+}
+
+
+.two{ 
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+
+.three{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.threeB{
+    border-radius: 2px;
+    background-color: aqua;
+}

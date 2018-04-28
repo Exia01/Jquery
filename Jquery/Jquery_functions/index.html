@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- Ask Tim? on the latest link for JS script source -->
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <!-- this is where the main scripts are located -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        $(".addclass").click(function(){
+            $('.paragraph1').css("background-color", "red");
+      });
+
+        $(".slidetoggle").click(function(){
+            $('img').toggle();
+      });
+
+        $(".threeB").click(function(){
+            $(".test").prepend("<p>this would be before the paragraph lol</p>");
+      });
+
+      $(".lorem").hover(function(){
+            $(".two").hide();
+      }, function(){
+          $(".two").show();
+      });
+      
+      $("#wrapper").hide(3000).show(3000);
+
+      $
+
+
+  });
+  </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="one">
+            <h1>AddClass</h1>
+            <button class="addclass">Add-Class</button><p class="paragraph1">Click the button to add red to this paragraph.</p>
+        </div>
+        <div class="two">
+            <h1>Slidetoggle</h1>
+            <button class="slidetoggle">Slide-Toggle</button><p>Click on the button to slide toggle a hidden image</p>
+            <img src="pikapika.gif" alt="pikachugiffy">
+        </div>
+        <div class="three">
+            <h1>Append</h1>
+            <button class="threeB">Append</button><p class="test">Click the button to append to the paragraph</p>
+
+            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum cupiditate ipsum, molestiae magnam quod praesentium ut quidem nemo voluptas veritatis distinctio adipisci dolore iusto blanditiis similique officiis explicabo aliquam.lorem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum cupiditate ipsum, molestiae magnam quod praesentium ut quidem nemo voluptas veritatis distinctio adipisci dolore iusto blanditiis similique officiis explicabo aliquam.lorem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum cupiditate ipsum, molestiae magnam quod praesentium ut quidem nemo voluptas veritatis distinctio adipisci dolore iusto blanditiis similique officiis explicabo aliquam.lorem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum cupiditate ipsum, molestiae magnam quod praesentium ut quidem nemo voluptas veritatis distinctio adipisci dolore iusto blanditiis similique officiis explicabo aliquam.loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum cupiditate ipsum, molestiae magnam quod praesentium ut quidem nemo voluptas veritatis distinctio adipisci dolore iusto blanditiis similique officiis explicabo aliquam.loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum cupiditate ipsum, molestiae magnam quod praesentium ut quidem nemo voluptas veritatis distinctio adipisci dolore iusto blanditiis similique officiis explicabo aliquam.lorem</p>
+        </div>
+
+    
+</body>
+</html>

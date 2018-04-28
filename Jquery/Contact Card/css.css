@@ -1,0 +1,14 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+/*     outline: 2px dashed black; */
+}
+
+#container{
+    display: flex;
+    width: 800px;
+    background-color: azure;
+}
+#form{
+    
+}

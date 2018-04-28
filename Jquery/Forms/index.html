@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(document).on("click", "#press", function(){
+                var  gvalues = "<tr> <td>" + $("#val1").val() + "</td>"; //<td> </tr last
+                    gvalues = gvalues + "<td>" + $("#val2").val() + "</td>";
+                    gvalues = gvalues + "<td>" + $("#val3").val() + "</td>";
+                    gvalues = gvalues + "<td>" + $("#val4").val() + "</td> </tr>";
+                    $("tr:last").after(gvalues);
+                    gvalues = "" 
+            });
+       
+            $("#ready1").submit(function () {
+                return false
+            });
+
+            // $(".press").click(function(){
+            //     $("#ready1").submit();
+            //     var input = $('input:text').val();
+            //     alert("thank you " + input);
+            //     $(".newinfo").children(".firstname").append(input);
+            // });
+            // $("#press").click(function () {
+            //     var input = $('input:text').val();
+            //     $("#emperor").append(" "+ input);
+            // });
+
+
+        });
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Good Day!</h1>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td>Last Name:</td>
+                    <td>Email Address:</td>
+                    <td>Phone No:</td>
+                </tr>
+            </table>
+        <div>
+            <h1>Add User</h1>
+            <form id="ready1" action="submit">
+                First Name<input id="val1" type="text" value="First name"><br>
+                <br> 
+                Last Name<input id="val2" type="text" value="Last name"><br>
+                <br> 
+                Email<input id="val3" type="text" value="Email"><br>
+                <br> 
+                Phone#<input id="val4" type="text" Phone="Email" value="Phone"><br>
+                <br>
+            </form>
+            <button id="press">Add User</button>
+        </div>
+</body>
+
+</html>
